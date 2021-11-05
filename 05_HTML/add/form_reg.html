@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма регистрации</title>
 </head>
 <body>
@@ -14,8 +12,8 @@
         <input type="text"  name="sename" pattern="[А-Яа-я]{3,20}" maxlength="20" placeholder="Фамилия" required><br>
         <input type="text"  name="patr" pattern="[А-Яа-я]{3,24}" maxlength="24" placeholder="Очество" required><br>
         <fieldset><legend>Паспортные данные</legend>
-            <input type="text"  name="l" size="1" maxlength="2" pattern="[A-Z]{2}" placeholder="AA">
-            <input type="text"  name="n" size="5" maxlength="7" pattern="[0-9]{7}" placeholder="1234567">
+            <input type="text"  name="l" size="1" maxlength="2" pattern="[A-Z]{2}" placeholder="AA" required>
+            <input type="text"  name="n" size="5" maxlength="7" pattern="[0-9]{7}" placeholder="1234567" required>
         </fieldset>
         <fieldset><legend>Дата рождения</legend>
         <input type="text" name="yer" size="3" maxlength="4" min="1900" max="2020" pattern="[0-9]{4}" placeholder="2000"><br>
