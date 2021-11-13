@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форматы файлов</title>
+    <style>
+        p{
+            text-indent: 20px;
+            margin-top: 0;
+        }
+        p a::before {
+            content: url(../ar.png);
+        }
+        a[href$='word.doc']::after{
+            content: url(../word.jfif);
+        }
+        a[href$='pdf.pdf']::after{
+            content: url(../pdf.png);
+        }
+        a[href$='archive.zip']::after{
+            content: url(../archive.gif);
+        }
+        div {
+            display: block; 
+            border: solid gray 1px; 
+            border-radius: 0 1em 0 1em;
+            padding-bottom: 0.8em
+        }
+        ul {
+            list-style: none;
+            padding-inline-start: 0;
+        } 
+        li a::before {
+            content: url(../file.jfif);
+        }
+        .word:hover:after {
+            content: url(../word.jfif);
+        }
+
+        .pdf:hover:after {
+            content: url(../pdf.png);
+        }
+
+        .archive:hover:after {
+            content: url(../archive.gif);
+        }
+    </style>
+</head>
+<body>
+    <h2>Форматы файлов.</h2>
+    <div>
+        <p>
+            .DOC или .doc (от англ. <a href="word.jfif">document</a>) - расширение имени файла, исползуемое для файлов,
+            представляющих текст, с разметкой или без. Расширение РОС часто использовалось для
+            обозначения простых текстовых файлов без формирования, однако позже стало
+            использоваться для двоичных форматов с разметкой.
+        </p>
+            <a href="word.doc">Документ MS Word</a>
+    </div>
+    <div>
+        <p>
+            Portable Document Format (<a href="pdf.png">PDF</a>) -  межплатформенный формат электронных документов,
+            разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+            Postscript.</p>
+            <a href="pdf.pdf">Документ РDF</a>
+    </div>
+    <div>
+        <p>
+            ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате
+            обычно имеет расширение <a href="archive.gif">zip</a> и хранит в сжатом или несжатом виде один или несколько
+            файлов, которое можно из него извлечь путем распаковки с помощью специальной
+            программы.<br></p>
+    <a href="archive.zip">Архив</a>
+</div>
+    <h3> Это список файлов</h3>
+    <ul>
+        <li class="word"><a href="word.jfif">Документ MS Word</a></li>
+        <li class="pdf"><a href="pdf.png">Документ РDF</a></li>
+        <li class="archive"><a href="archive.gif">Архив</a></li> 
+    </ul>  
+</body>
+</body>
+</html>
