@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <style>
+    ul.Menu1 li{
+        float: left;
+        width: 140px;
+        box-sizing: border-box;
+        list-style-type: none;
+        background-color: lightgrey;
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 10px 10px;
+        margin-left: -1px;
+        position: relative;
+        }
+    ul.Menu2 {
+        display: none;
+    }
+    ul.Menu2 > li{
+        width: 140px;
+        box-sizing: border-box;
+        list-style-type: none;
+        background-color: lightgrey;
+        border: solid 1px black;
+        margin-bottom: -1px;
+    }
+    ul.Menu1 > li:hover ul.Menu2{
+        float: none; display: block; position: absolute;  top: 100%; left: -41px; z-index: 10;
+    }
+    @media all and (max-width: 900px){
+        ul.Menu1 li{
+        float: none;
+        width: 140px;
+        box-sizing: border-box;
+        list-style-type: none;
+        background-color: lightgrey;
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 10px 10px;
+        margin-bottom: -1px;
+        position: relative;
+        }
+    ul.Menu2 {
+        display: none;
+    }
+    ul.Menu2 > li{
+        width: 140px;
+        box-sizing: border-box;
+        list-style-type: none;
+        background-color: lightgrey;
+        border: solid 1px black;
+    }
+    ul.Menu1 > li:hover ul.Menu2{
+        float: none; display: block; top: 100%; left: 100px; top: -1px; width: 100%; z-index: 10;
+    }
+    }
+</style>
+</head>
+<body>
+    <ul class='Menu1'>
+        <li>Понедельник
+            <ul class='Menu2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>
+            Вторник
+            <ul class='Menu2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>
+            Среда
+            <ul class='Menu2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>Четверг
+            <ul class='Menu2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>Пятница
+            <ul class='Menu2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+        <li>Суббота
+            <ul class='Menu2'>
+                <li>Завтрак</li>
+                <li>Обед</li>
+                <li>Ужин</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
